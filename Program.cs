@@ -8,3 +8,20 @@ for(int i = 0; i < Length1; i++)
     arr1[i] = Console.ReadLine();
     if (arr1[i].Length <= 3) Length2++;
 }
+string[] arr2 = new string[Length2];
+int j = 0; 
+for(int i = 0; i < Length1; i++)
+{
+    if(arr1[i].Length <= 3)
+    {
+        
+        arr2[j] = arr1[i];
+        j++;
+        
+    }
+}
+System.Console.WriteLine("Выражения состоящие из трёх или менее символов: ");
+for(int i = 0; i < arr2.Length; i++)
+{
+    Console.Write(arr2[i] + " ");
+}
