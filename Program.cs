@@ -8,6 +8,14 @@ for(int i = 0; i < Length1; i++)
     arr1[i] = Console.ReadLine();
     if (arr1[i].Length <= 3) Length2++;
 }
+
+if(Length2 == 0) 
+{
+    System.Console.WriteLine("Выражений состоящих из трёх или менее, символо - нет!");
+    return;
+}
+else
+{
 string[] arr2 = new string[Length2];
 int j = 0; 
 for(int i = 0; i < Length1; i++)
@@ -20,8 +28,10 @@ for(int i = 0; i < Length1; i++)
         
     }
 }
+
 System.Console.WriteLine("Выражения состоящие из трёх или менее символов: ");
 for(int i = 0; i < arr2.Length; i++)
 {
     Console.Write(arr2[i] + " ");
+}
 }
